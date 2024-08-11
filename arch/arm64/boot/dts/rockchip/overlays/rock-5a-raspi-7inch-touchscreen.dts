@@ -34,19 +34,19 @@
 	status = "okay";
 	#address-cells = <1>;
 	#size-cells = <0>;
-	rockchip,lane-rate = <600>;
+	rockchip,lane-rate = <700>;
 
 	dsi0_panel: dsi-panel@0 {
 		compatible = "raspits,tc358762";
 		reg = <0x0>;
 		status = "okay";
-		rockchip,lane-rate = <600>;
+		rockchip,lane-rate = <700>;
 
 		display_timings0: display-timings {
 			native-mode = <&dsi0_timing>;
 
 			dsi0_timing: timing0 {
-				clock-frequency = <26000000>;
+				clock-frequency = <30000000>;
 				hactive = <800>;
 				vactive = <480>;
 
